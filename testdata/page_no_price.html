@@ -1,0 +1,22 @@
+<!doctype html>
+<!--
+  Фикстура «битого» товара: страница жива и отдаёт 200, но блока с ценой нет —
+  товар снят с продажи. Парсер обязан вернуть ошибку, а не молча записать 0.
+-->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Кофеварка Bravo X900 — Магазин Пример</title>
+</head>
+<body>
+<main>
+    <article class="product-card" data-product-id="900">
+        <h1 class="product-card__title">Кофеварка Bravo X900</h1>
+
+        <div class="product-card__purchase">
+            <span class="product-card__availability">Снят с продажи</span>
+        </div>
+    </article>
+</main>
+</body>
+</html>

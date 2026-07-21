@@ -1,0 +1,23 @@
+.env
+*.env
+!.env.example
+
+parser
+/bin/
+/out/
+
+# Выгрузки экспортёра: артефакты прогона, не исходники.
+*.xlsx
+
+# Ключ сервис-аккаунта Google (stretch-goal) — секрет, не должен попасть в репозиторий.
+service-account.json
+credentials.json
+
+*.exe
+*.test
+*.out
+coverage.*
+
+.DS_Store
+.idea/
+.vscode/

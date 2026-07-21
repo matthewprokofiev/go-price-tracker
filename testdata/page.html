@@ -1,0 +1,71 @@
+<!doctype html>
+<!--
+  Фикстура: сохранённая страница товара учебного магазина.
+  Цена намеренно записана «как в жизни»: неразрывные пробелы как разделитель тысяч,
+  запятая как десятичный разделитель, значок валюты внутри того же элемента.
+-->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Кофеварка Bravo X200 — Магазин Пример</title>
+</head>
+<body>
+<header class="header">
+    <a class="logo" href="/">Магазин Пример</a>
+    <nav>
+        <a href="/catalog">Каталог</a>
+        <a href="/cart">Корзина</a>
+    </nav>
+</header>
+
+<main>
+    <div class="breadcrumbs">
+        <a href="/catalog">Каталог</a> /
+        <a href="/catalog/kitchen">Кухня</a> /
+        <span>Кофеварки</span>
+    </div>
+
+    <article class="product-card" data-product-id="200">
+        <h1 class="product-card__title">Кофеварка Bravo X200</h1>
+
+        <div class="product-card__gallery">
+            <img src="/img/bravo-x200.jpg" alt="Кофеварка Bravo X200">
+        </div>
+
+        <div class="product-card__purchase">
+            <span class="product-card__price-old">15 990 ₽</span>
+            <span class="product-card__price">12 499,50 ₽</span>
+            <span class="product-card__availability">В наличии</span>
+            <button class="product-card__buy" type="button">В корзину</button>
+        </div>
+
+        <section class="product-card__specs">
+            <h2>Характеристики</h2>
+            <table>
+                <tr><td>Мощность</td><td>1450 Вт</td></tr>
+                <tr><td>Объём резервуара</td><td>1,8 л</td></tr>
+                <tr><td>Гарантия</td><td>24 мес.</td></tr>
+            </table>
+        </section>
+    </article>
+
+    <section class="recommendations">
+        <h2>Похожие товары</h2>
+        <ul>
+            <li class="rec-item">
+                <a href="/catalog/kitchen/bravo-x100">Кофеварка Bravo X100</a>
+                <span class="product-card__price">8 990 ₽</span>
+            </li>
+            <li class="rec-item">
+                <a href="/catalog/kitchen/vento-c5">Кофемолка Vento C5</a>
+                <span class="product-card__price">3 200 ₽</span>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© Магазин Пример. Учебный пример для портфолио.</p>
+</footer>
+</body>
+</html>
