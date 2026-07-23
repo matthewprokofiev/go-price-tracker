@@ -2,7 +2,9 @@
 *.env
 !.env.example
 
-parser
+# Бинарь от `go build ./cmd/parser` в корне. Слэш обязателен: без него паттерн
+# матчил бы и каталог cmd/parser/ — из-за этого его исходники не попадали в git.
+/parser
 /bin/
 /out/
 
